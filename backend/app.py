@@ -140,12 +140,24 @@ def recommend_books():
         # Generate Recommendations
         recommendations = recommend(book_name)
 
-        # Fetch additional details for each recommendation
-        results = []
+        # Deduplicate recommendations
+        unique_recommendations = []
+        seen_titles = set()
         for title in recommendations:
-            details = fetch_combined_data(title)
+            normalized_title = title.strip().lower()
+            if normalized_title not in seen_titles:
+                seen_titles.add(normalized_title)
+                unique_recommendations.append(title)
+
+        # Fetch additional details for each unique recommendation
+        results = []
+        for original_title in unique_recommendations:
+            details = fetch_combined_data(original_title)
             if details:
-                results.append(details)
+                normalized_details_title = details['title'].strip().lower()
+                if normalized_details_title not in seen_titles:
+                    seen_titles.add(normalized_details_title)
+                    results.append(details)
 
         # Handle case where no results are found
         if not results:
