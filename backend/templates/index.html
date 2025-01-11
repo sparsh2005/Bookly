@@ -9,12 +9,16 @@
 <body>
   <header>
     <div class="header-content">
-      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Bookly Logo" class="logo">
-      <div class="title">
-        <h1>Bookly</h1>
-        <p>Your Personal Literary Guide</p>
+      <div class="logo-title-group">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Bookly Logo" class="logo">
+        <div class="title">
+          <h1>Bookly</h1>
+          <p>Your Personal Literary Guide</p>
+        </div>
       </div>
-      <img src="{{ url_for('static', filename='images/dark-mode-icon.png') }}" alt="Dark Mode" class="dark-mode-toggle">
+      <button class="dark-mode-toggle">
+        <img src="{{ url_for('static', filename='images/dark-mode-icon.png') }}" alt="Dark Mode">
+      </button>
     </div>
   </header>
 
