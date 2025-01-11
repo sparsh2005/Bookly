@@ -39,9 +39,17 @@ body {
   }
   
   .title h1 {
+    /* Option 1: Playfair Display - elegant, literary feel */
+    font-family: 'Playfair Display', serif;
+    /* Option 2: Libre Baskerville - classic book typography */
+    /* font-family: 'Libre Baskerville', serif; */
+    /* Option 3: Cormorant Garamond - sophisticated serif */
+    /* font-family: 'Cormorant Garamond', serif; */
     color: #78350F;
-    font-size: 22.5px;
+    font-size: 24px;
+    font-weight: 600;
     margin: 0;
+    letter-spacing: 0.5px;
   }
   
   .title p {
