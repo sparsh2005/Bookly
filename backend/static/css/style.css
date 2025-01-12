@@ -156,7 +156,7 @@ body {
     position: relative;
     box-shadow: 
         inset 0 0 0 1px #bcffe0,    /* Inner border */
-        0 2px 4px rgba(0, 0, 0, 0.364); /* Outer shadow for 3D effect */
+        0 2px 4px rgba(0, 0, 0, 0.251); /* Outer shadow for 3D effect */
   }
   
   .message.user .content::after {
