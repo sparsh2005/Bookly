@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
       const avatar = document.createElement("img");
       avatar.src = isUser
-        ? "static/images/user-icon.png"
+        ? "static/images/user.png"
         : "static/images/chatbot-icon.png";
       avatar.classList.add("avatar");
   
