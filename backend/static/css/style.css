@@ -122,8 +122,8 @@ body {
   }
   
   .message .avatar img {
-    width: 26px;
-    height: 26px;
+    width: 22px;
+    height: 22px;
     object-fit: contain;
   }
   
@@ -140,8 +140,8 @@ body {
   }
   
   .message.user .avatar img {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     object-fit: contain;
   }
   
