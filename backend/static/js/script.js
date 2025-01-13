@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const avatar = document.createElement("img");
       avatar.src = isUser
         ? "static/images/user.png"
-        : "static/images/chatbot-icon.png";
+        : "static/images/bot.png";
       avatar.classList.add("avatar");
   
       const contentDiv = document.createElement("div");
