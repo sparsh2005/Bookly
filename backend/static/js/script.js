@@ -31,7 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
               card.classList.add("recommendation-card");
               
               card.innerHTML = `
-                  <img src="${book.thumbnail}" alt="${book.title}">
+                  <div class="image-container">
+                      <img src="${book.thumbnail}" alt="${book.title}">
+                  </div>
                   <div class="details">
                       <h3>${book.title}</h3>
                       <p>${book.author}</p>
