@@ -184,45 +184,47 @@ body {
   .recommendation-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    margin-top: 12px;
+    gap: 20px;
+    margin-top: 16px;
   }
   
+  /* Make the card a horizontal layout instead of stacked. */
   .recommendation-card {
     background-color: #ffffff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 20px;
+    border: 1px solid #F3D5BF;
   }
   
   .recommendation-card img {
-    width: auto;
-    height: 200px;
-    object-fit: contain;
-    display: block;
-    border-radius: 8px;
-    margin-bottom: 12px;
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 14px;
   }
   
   .recommendation-card .details {
-    text-align: center;
+    text-align: left;
   }
   
   .recommendation-card .details h3 {
-    color: #4B3621;
-    font-size: 18px;
+    color: #78350F;
+    font-size: 14px;
     font-weight: 600;
-    margin: 8px 0 4px 0;
-    line-height: 1.2;
+    margin: 0 0 6px 0;
+    line-height: 1.3;
+    font-family: 'Playfair Display', serif;
   }
   
   .recommendation-card .details p {
-    color: #8B7355;
-    font-size: 14px;
+    color: #B4540A;
+    font-size: 12px;
     margin: 0;
     font-weight: 400;
   }
