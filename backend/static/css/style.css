@@ -250,8 +250,14 @@ body {
   #user-input {
     flex: 1;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    border-radius: 10px;
+    border: 1px solid #FDE68A;
+    background-color: #F7F5ED;
+  }
+  
+  #user-input::placeholder {
+    color: #9CA3AF;
+    opacity: 1;
   }
   
   #send-btn {
