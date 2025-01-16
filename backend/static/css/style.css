@@ -267,3 +267,7 @@ body {
     width: 20px;
     height: 20px;
   }
+  
+  .bold-text {
+    font-weight: 500;
+  }

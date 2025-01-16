@@ -80,6 +80,12 @@ document.addEventListener("DOMContentLoaded", () => {
               false
           );
           messagesContainer.appendChild(message);
+  
+          // Apply inline style for bold text
+          const boldText = message.querySelector('.content div:first-child');
+          if (boldText) {
+              boldText.style.fontWeight = '500';
+          }
       } else {
           messagesContainer.appendChild(createMessage("No recommendations found.", null, false));
       }
