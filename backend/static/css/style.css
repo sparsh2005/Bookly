@@ -89,7 +89,7 @@ body {
   /* Chatbox */
   #chatbox {
     max-width: 800px;
-    height: 500px;
+    height: 540px;
     margin: 20px auto;
     background-color: #F3EFED;
     border-radius: 10px;
@@ -101,7 +101,7 @@ body {
   
   #messages {
     flex: 1;
-    max-height: 400px;
+    max-height: 440px;
     overflow-y: auto;
   }
   
