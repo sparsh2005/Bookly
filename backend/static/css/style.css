@@ -209,6 +209,12 @@ body {
     padding: 10px;
     border: 1px solid #F3D5BF;
     width: 250px;
+    transition: transform 0.2s, box-shadow 0.2s; /* Add transition for smooth effect */
+  }
+  
+  .recommendation-card:hover {
+    transform: translateY(-5px); /* Move the card up */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increase shadow for 3D effect */
   }
   
   .image-container {
