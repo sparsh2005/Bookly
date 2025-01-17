@@ -3,6 +3,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const userInput = document.getElementById("user-input");
     const sendButton = document.getElementById("send-btn");
   
+    // Function to create and append the initial chatbot message
+    const appendInitialMessage = () => {
+        const initialMessage = createMessage(
+            "Hi! I'm Bookly, your personal library companion. I'm here to help you discover your next literary adventure. Give me the titles of the books you enjoyed, and I'll recommend some perfect matches for your reading list. We are working on some amazing updates for this app, so stay tuned!",
+            null,
+            false
+        );
+        messagesContainer.appendChild(initialMessage);
+    };
+  
     const createMessage = (content, books = null, isUser = false) => {
       const messageDiv = document.createElement("div");
       messageDiv.classList.add("message", isUser ? "user" : "chatbot");
@@ -56,6 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
   
       return messageDiv;
     };
+  
+    // Call the function to append the initial message
+    appendInitialMessage();
   
     sendButton.addEventListener("click", async () => {
       const userText = userInput.value.trim();
