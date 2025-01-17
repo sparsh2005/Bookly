@@ -89,15 +89,19 @@ body {
   /* Chatbox */
   #chatbox {
     max-width: 800px;
+    height: 500px;
     margin: 20px auto;
     background-color: #F3EFED;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
   }
   
   #messages {
-    max-height: 500px;
+    flex: 1;
+    max-height: 400px;
     overflow-y: auto;
   }
   
@@ -249,7 +253,7 @@ body {
   
   .input-area {
     display: flex;
-    margin-top: 20px;
+    margin-top: 100px;
   }
   
   #user-input {
