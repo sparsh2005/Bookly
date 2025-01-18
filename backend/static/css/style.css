@@ -89,20 +89,21 @@ body {
   /* Chatbox */
   #chatbox {
     max-width: 800px;
-    height: 540px;
-    margin: 20px auto;
+    height: 500px;
+    margin: 30px auto;
     background-color: #F3EFED;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
   }
   
   #messages {
     flex: 1;
-    max-height: 440px;
+    max-height: 450px;
     overflow-y: auto;
+    margin-bottom: 10px;
   }
   
   .message {
@@ -259,7 +260,8 @@ body {
   
   .input-area {
     display: flex;
-    margin-top: 100px;
+    margin-top: 0;
+    padding-top: 5px;
   }
   
   #user-input {
@@ -288,12 +290,6 @@ body {
     width: 80px;
     height: 40px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s, box-shadow 0.2s; /* Add transition for smooth effect */
-  }
-  
-  #send-btn:hover {
-    transform: translateY(-3px); /* Move the button up */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increase shadow for 3D effect */
   }
   
   #send-btn img {
