@@ -268,8 +268,15 @@ body {
     flex: 1;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid #FDE68A;
+    border: 2px solid #FDE68A;
     background-color: #F7F5ED;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  #user-input:focus {
+    border-color: #FBBF24;
+    box-shadow: 0 0 8px #FDE68A;
+    outline: none;
   }
   
   #user-input::placeholder {
