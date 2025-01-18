@@ -46,7 +46,8 @@ Welcome to **Bookly**, your go-to book recommendation system designed to simplif
 ## 📸 Screenshots
 
 ### 1. Homepage
-![Homepage](static/images/homepage.png)
+<img width="1400" alt="image" src="https://github.com/user-attachments/assets/78ab4464-a587-4790-bf42-214979b65dfb" />
+
 
 ### 2. User Input & Recommendations
 ![User Input](static/images/user_input.png)
