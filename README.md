@@ -82,11 +82,10 @@ To run this project locally:
    git clone https://github.com/<username>/Bookly.git
 
 2. Install requirements:
-   
+   ```bash
     pip install -r requirements.txt
 
 4. Run the app.
-   
-    navigate to the backend
-   
-    python app.py
+   Navigate to the backend
+   ```bash
+   python app.py
