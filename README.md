@@ -46,11 +46,12 @@ Welcome to **Bookly**, your go-to book recommendation system designed to simplif
 ## 📸 Screenshots
 
 ### 1. Homepage
-![Homepage](static/images/homepage.png)
+<img width="1400" alt="image" src="https://github.com/user-attachments/assets/78ab4464-a587-4790-bf42-214979b65dfb" />
+
 
 ### 2. User Input & Recommendations
-![User Input](static/images/user_input.png)
-![Recommendations](static/images/recommendation.png)
+<img width="936" alt="image" src="https://github.com/user-attachments/assets/c7b17842-938c-478b-8633-1c2e885dafbd" />
+<img width="660" alt="image" src="https://github.com/user-attachments/assets/3dda8e03-ce92-47c5-a29f-201a9cd4a5b2" />
 
 ---
 
@@ -81,8 +82,10 @@ To run this project locally:
    git clone https://github.com/<username>/Bookly.git
 
 2. Install requirements:
+   ```bash
     pip install -r requirements.txt
 
-3. Run the app.
-    navigate to the backend
-    python app.py
+4. Run the app.
+   Navigate to the backend
+   ```bash
+   python app.py
