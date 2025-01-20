@@ -4,6 +4,7 @@ import pickle
 import numpy as np
 from fuzzywuzzy import process
 import requests
+import os
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -13,10 +14,16 @@ CORS(app)
 # Load Saved Models
 # ---------------------------
 try:
-    pt = pickle.load(open('pivot_table.pkl', 'rb'))
-    similarity_scores = pickle.load(open('similarity_scores.pkl', 'rb'))
-    filtered_ratings = pickle.load(open('filtered_ratings.pkl', 'rb'))
+    # Get the absolute path to the current file's directory
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Load the model files using absolute paths
+    pt = pickle.load(open(os.path.join(base_dir, 'pivot_table.pkl'), 'rb'))
+    similarity_scores = pickle.load(open(os.path.join(base_dir, 'similarity_scores.pkl'), 'rb'))
+    filtered_ratings = pickle.load(open(os.path.join(base_dir, 'filtered_ratings.pkl'), 'rb'))
     print("Models loaded successfully.")
+except FileNotFoundError as fnf_error:
+    print(f"File not found: {fnf_error}")
 except Exception as e:
     print(f"Error loading models: {e}")
 
