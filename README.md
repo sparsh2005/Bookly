@@ -1,3 +1,5 @@
+Bookly V2 coming soon!
+
 # 📚 Bookly - Your Personal Literary Guide
 
 Welcome to **Bookly**, your go-to book recommendation system designed to simplify and enhance your literary journey. With Bookly, discovering your next favorite book is as easy as typing a title you loved. Dive in and let Bookly curate the perfect reading list for you!
